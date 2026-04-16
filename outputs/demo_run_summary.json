@@ -1,0 +1,13 @@
+{
+  "generated_at": "2026-04-15",
+  "sample_report": "outputs/reports/sample_bank_statement_audit_report_20260415_175048.docx",
+  "sample_labeled_json": "datasets/labeled_data/sample_bank_statement_labeled_20260415_175047.json",
+  "sample_labeled_csv": "datasets/labeled_data/sample_bank_statement_labeled_20260415_175047.csv",
+  "sample_human_csv": "outputs/labeled_docs/sample_bank_statement_labeled_20260415_175047.csv",
+  "sample_human_docx": "outputs/labeled_docs/sample_bank_statement_labeled_20260415_175047.docx",
+  "sample_charts": [
+    "outputs/charts/sample_bank_statement_category_20260415_175047.png",
+    "outputs/charts/sample_bank_statement_balance_20260415_175047.png"
+  ],
+  "sample_fine_tune_status": "skipped (no local base model configured in environment)"
+}

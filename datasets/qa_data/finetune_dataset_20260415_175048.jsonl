@@ -1,0 +1,23 @@
+{"instruction": "Were any anomalous transactions detected?", "output": "Yes. 1 unusually large transactions were flagged.", "source": "generated", "document_id": "a933aace-ab1f-419b-8ddf-e4235ad5184b"}
+{"instruction": "What is the largest credit transaction?", "output": "The largest credit is 75000.00 for Salary ACME Corp.", "source": "generated", "document_id": "a933aace-ab1f-419b-8ddf-e4235ad5184b"}
+{"instruction": "What is the largest debit transaction?", "output": "The largest debit is 20000.00 for Rent Transfer to Landlord.", "source": "generated", "document_id": "a933aace-ab1f-419b-8ddf-e4235ad5184b"}
+{"instruction": "Which transaction category has the highest volume?", "output": "The highest-volume category is INCOME.", "source": "generated", "document_id": "a933aace-ab1f-419b-8ddf-e4235ad5184b"}
+{"instruction": "How many transactions are present?", "output": "There are 13 transactions in the statement.", "source": "generated", "document_id": "a933aace-ab1f-419b-8ddf-e4235ad5184b"}
+{"instruction": "What is the total credit?", "output": "The total credit is 75120.0.", "source": "generated", "document_id": "a933aace-ab1f-419b-8ddf-e4235ad5184b"}
+{"instruction": "What is the total debit?", "output": "The total debit is 42079.0.", "source": "generated", "document_id": "a933aace-ab1f-419b-8ddf-e4235ad5184b"}
+{"instruction": "What is the closing balance?", "output": "The closing balance is 83041.0.", "source": "generated", "document_id": "a933aace-ab1f-419b-8ddf-e4235ad5184b"}
+{"instruction": "What is the opening balance?", "output": "The opening balance is 50000.0.", "source": "generated", "document_id": "a933aace-ab1f-419b-8ddf-e4235ad5184b"}
+{"instruction": "What period does the statement cover?", "output": "The statement covers 2026-01-01 to 2026-01-24.", "source": "generated", "document_id": "a933aace-ab1f-419b-8ddf-e4235ad5184b"}
+{"instruction": "Classify the bank transaction into a category: Opening Balance", "output": "UNCATEGORIZED", "source": "label-derived", "document_id": "a933aace-ab1f-419b-8ddf-e4235ad5184b"}
+{"instruction": "Classify the bank transaction into a category: Salary ACME Corp", "output": "INCOME", "source": "label-derived", "document_id": "a933aace-ab1f-419b-8ddf-e4235ad5184b"}
+{"instruction": "Classify the bank transaction into a category: Rent Transfer to Landlord", "output": "TRANSFER", "source": "label-derived", "document_id": "a933aace-ab1f-419b-8ddf-e4235ad5184b"}
+{"instruction": "Classify the bank transaction into a category: Electricity Bill Payment", "output": "UTILITIES", "source": "label-derived", "document_id": "a933aace-ab1f-419b-8ddf-e4235ad5184b"}
+{"instruction": "Classify the bank transaction into a category: Swiggy Order #8211", "output": "FOOD", "source": "label-derived", "document_id": "a933aace-ab1f-419b-8ddf-e4235ad5184b"}
+{"instruction": "Classify the bank transaction into a category: Uber Trip Bangalore", "output": "TRAVEL", "source": "label-derived", "document_id": "a933aace-ab1f-419b-8ddf-e4235ad5184b"}
+{"instruction": "Classify the bank transaction into a category: Netflix Subscription", "output": "SUBSCRIPTION", "source": "label-derived", "document_id": "a933aace-ab1f-419b-8ddf-e4235ad5184b"}
+{"instruction": "Classify the bank transaction into a category: ATM Cash Withdrawal", "output": "CASH", "source": "label-derived", "document_id": "a933aace-ab1f-419b-8ddf-e4235ad5184b"}
+{"instruction": "Classify the bank transaction into a category: Savings Interest", "output": "INCOME", "source": "label-derived", "document_id": "a933aace-ab1f-419b-8ddf-e4235ad5184b"}
+{"instruction": "Classify the bank transaction into a category: UPI Transfer to Ravi", "output": "TRANSFER", "source": "label-derived", "document_id": "a933aace-ab1f-419b-8ddf-e4235ad5184b"}
+{"instruction": "Classify the bank transaction into a category: Amazon Shopping", "output": "SHOPPING", "source": "label-derived", "document_id": "a933aace-ab1f-419b-8ddf-e4235ad5184b"}
+{"instruction": "Classify the bank transaction into a category: Pharmacy Purchase", "output": "HEALTH", "source": "label-derived", "document_id": "a933aace-ab1f-419b-8ddf-e4235ad5184b"}
+{"instruction": "Classify the bank transaction into a category: Insurance Premium", "output": "LOAN", "source": "label-derived", "document_id": "a933aace-ab1f-419b-8ddf-e4235ad5184b"}

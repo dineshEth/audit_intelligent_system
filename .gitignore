@@ -1,0 +1,16 @@
+.env
+.venv/
+__pycache__/
+.pytest_cache/
+.mypy_cache/
+*.pyc
+*.pyo
+*.log
+.DS_Store
+outputs/charts/*.png
+outputs/reports/*.docx
+outputs/labeled_docs/*.docx
+outputs/labeled_docs/*.csv
+outputs/models/*
+!outputs/models/.gitkeep
+.mongo_data/
