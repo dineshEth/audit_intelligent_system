@@ -1,5 +1,6 @@
 .env
 .venv/
+venv/
 __pycache__/
 .pytest_cache/
 .mypy_cache/
@@ -14,3 +15,5 @@ outputs/labeled_docs/*.csv
 outputs/models/*
 !outputs/models/.gitkeep
 .mongo_data/
+
+venv/
