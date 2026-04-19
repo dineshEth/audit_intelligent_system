@@ -145,6 +145,23 @@ python scripts/bootstrap_db.py
 streamlit run streamlit_app.py
 ```
 
+## LLM install guide
+
+### Install Hugging Face Hub
+pip install huggingface_hub
+
+### (Optional but recommended) Install CLI tools
+pip install -U "huggingface_hub[cli]"
+
+### Download TinyLlama Chat Model
+huggingface-cli download TinyLlama/TinyLlama-1.1B-Chat-v1.0 --local-dir models/tinyllama
+
+### OR (new hf CLI command)
+hf download TinyLlama/TinyLlama-1.1B-Chat-v1.0 --local-dir models/tinyllama
+
+### Download Embedding Model
+hf download sentence-transformers/all-MiniLM-L6-v2 --local-dir models/embeddings
+
 ## Demo
 
 The repository includes a sample bank statement:
