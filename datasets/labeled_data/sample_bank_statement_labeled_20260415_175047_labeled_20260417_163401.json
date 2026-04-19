@@ -1,0 +1,223 @@
+[
+  {
+    "DATE": "2026-01-01",
+    "DESCRIPTION": "Opening Balance",
+    "DEBIT": 0.0,
+    "CREDIT": 0.0,
+    "BALANCE": 50000.0,
+    "CATEGORY": "UNCATEGORIZED",
+    "LABEL_SOURCE": "rule",
+    "CONFIDENCE": 0.25,
+    "RAW_ROW": {
+      "DATE": "2026-01-01T00:00:00",
+      "DESCRIPTION": "Opening Balance",
+      "DEBIT": 0.0,
+      "CREDIT": 0.0,
+      "BALANCE": 50000.0
+    }
+  },
+  {
+    "DATE": "2026-01-03",
+    "DESCRIPTION": "Salary ACME Corp",
+    "DEBIT": 0.0,
+    "CREDIT": 75000.0,
+    "BALANCE": 125000.0,
+    "CATEGORY": "INCOME",
+    "LABEL_SOURCE": "rule",
+    "CONFIDENCE": 0.83,
+    "RAW_ROW": {
+      "DATE": "2026-01-03T00:00:00",
+      "DESCRIPTION": "Salary ACME Corp",
+      "DEBIT": 0.0,
+      "CREDIT": 75000.0,
+      "BALANCE": 125000.0
+    }
+  },
+  {
+    "DATE": "2026-01-05",
+    "DESCRIPTION": "Rent Transfer to Landlord",
+    "DEBIT": 20000.0,
+    "CREDIT": 0.0,
+    "BALANCE": 105000.0,
+    "CATEGORY": "TRANSFER",
+    "LABEL_SOURCE": "rule",
+    "CONFIDENCE": 0.83,
+    "RAW_ROW": {
+      "DATE": "2026-01-05T00:00:00",
+      "DESCRIPTION": "Rent Transfer to Landlord",
+      "DEBIT": 20000.0,
+      "CREDIT": 0.0,
+      "BALANCE": 105000.0
+    }
+  },
+  {
+    "DATE": "2026-01-06",
+    "DESCRIPTION": "Electricity Bill Payment",
+    "DEBIT": 3500.0,
+    "CREDIT": 0.0,
+    "BALANCE": 101500.0,
+    "CATEGORY": "UTILITIES",
+    "LABEL_SOURCE": "rule",
+    "CONFIDENCE": 0.83,
+    "RAW_ROW": {
+      "DATE": "2026-01-06T00:00:00",
+      "DESCRIPTION": "Electricity Bill Payment",
+      "DEBIT": 3500.0,
+      "CREDIT": 0.0,
+      "BALANCE": 101500.0
+    }
+  },
+  {
+    "DATE": "2026-01-07",
+    "DESCRIPTION": "Swiggy Order #8211",
+    "DEBIT": 650.0,
+    "CREDIT": 0.0,
+    "BALANCE": 100850.0,
+    "CATEGORY": "FOOD",
+    "LABEL_SOURCE": "rule",
+    "CONFIDENCE": 0.83,
+    "RAW_ROW": {
+      "DATE": "2026-01-07T00:00:00",
+      "DESCRIPTION": "Swiggy Order #8211",
+      "DEBIT": 650.0,
+      "CREDIT": 0.0,
+      "BALANCE": 100850.0
+    }
+  },
+  {
+    "DATE": "2026-01-09",
+    "DESCRIPTION": "Uber Trip Bangalore",
+    "DEBIT": 450.0,
+    "CREDIT": 0.0,
+    "BALANCE": 100400.0,
+    "CATEGORY": "TRAVEL",
+    "LABEL_SOURCE": "rule",
+    "CONFIDENCE": 0.83,
+    "RAW_ROW": {
+      "DATE": "2026-01-09T00:00:00",
+      "DESCRIPTION": "Uber Trip Bangalore",
+      "DEBIT": 450.0,
+      "CREDIT": 0.0,
+      "BALANCE": 100400.0
+    }
+  },
+  {
+    "DATE": "2026-01-10",
+    "DESCRIPTION": "Netflix Subscription",
+    "DEBIT": 499.0,
+    "CREDIT": 0.0,
+    "BALANCE": 99901.0,
+    "CATEGORY": "SUBSCRIPTION",
+    "LABEL_SOURCE": "rule",
+    "CONFIDENCE": 0.91,
+    "RAW_ROW": {
+      "DATE": "2026-01-10T00:00:00",
+      "DESCRIPTION": "Netflix Subscription",
+      "DEBIT": 499.0,
+      "CREDIT": 0.0,
+      "BALANCE": 99901.0
+    }
+  },
+  {
+    "DATE": "2026-01-12",
+    "DESCRIPTION": "ATM Cash Withdrawal",
+    "DEBIT": 5000.0,
+    "CREDIT": 0.0,
+    "BALANCE": 94901.0,
+    "CATEGORY": "CASH",
+    "LABEL_SOURCE": "rule",
+    "CONFIDENCE": 0.98,
+    "RAW_ROW": {
+      "DATE": "2026-01-12T00:00:00",
+      "DESCRIPTION": "ATM Cash Withdrawal",
+      "DEBIT": 5000.0,
+      "CREDIT": 0.0,
+      "BALANCE": 94901.0
+    }
+  },
+  {
+    "DATE": "2026-01-14",
+    "DESCRIPTION": "Savings Interest",
+    "DEBIT": 0.0,
+    "CREDIT": 120.0,
+    "BALANCE": 95021.0,
+    "CATEGORY": "INCOME",
+    "LABEL_SOURCE": "rule",
+    "CONFIDENCE": 0.83,
+    "RAW_ROW": {
+      "DATE": "2026-01-14T00:00:00",
+      "DESCRIPTION": "Savings Interest",
+      "DEBIT": 0.0,
+      "CREDIT": 120.0,
+      "BALANCE": 95021.0
+    }
+  },
+  {
+    "DATE": "2026-01-16",
+    "DESCRIPTION": "UPI Transfer to Ravi",
+    "DEBIT": 2500.0,
+    "CREDIT": 0.0,
+    "BALANCE": 92521.0,
+    "CATEGORY": "TRANSFER",
+    "LABEL_SOURCE": "rule",
+    "CONFIDENCE": 0.91,
+    "RAW_ROW": {
+      "DATE": "2026-01-16T00:00:00",
+      "DESCRIPTION": "UPI Transfer to Ravi",
+      "DEBIT": 2500.0,
+      "CREDIT": 0.0,
+      "BALANCE": 92521.0
+    }
+  },
+  {
+    "DATE": "2026-01-18",
+    "DESCRIPTION": "Amazon Shopping",
+    "DEBIT": 3200.0,
+    "CREDIT": 0.0,
+    "BALANCE": 89321.0,
+    "CATEGORY": "SHOPPING",
+    "LABEL_SOURCE": "rule",
+    "CONFIDENCE": 0.91,
+    "RAW_ROW": {
+      "DATE": "2026-01-18T00:00:00",
+      "DESCRIPTION": "Amazon Shopping",
+      "DEBIT": 3200.0,
+      "CREDIT": 0.0,
+      "BALANCE": 89321.0
+    }
+  },
+  {
+    "DATE": "2026-01-20",
+    "DESCRIPTION": "Pharmacy Purchase",
+    "DEBIT": 780.0,
+    "CREDIT": 0.0,
+    "BALANCE": 88541.0,
+    "CATEGORY": "HEALTH",
+    "LABEL_SOURCE": "rule",
+    "CONFIDENCE": 0.83,
+    "RAW_ROW": {
+      "DATE": "2026-01-20T00:00:00",
+      "DESCRIPTION": "Pharmacy Purchase",
+      "DEBIT": 780.0,
+      "CREDIT": 0.0,
+      "BALANCE": 88541.0
+    }
+  },
+  {
+    "DATE": "2026-01-24",
+    "DESCRIPTION": "Insurance Premium",
+    "DEBIT": 5500.0,
+    "CREDIT": 0.0,
+    "BALANCE": 83041.0,
+    "CATEGORY": "LOAN",
+    "LABEL_SOURCE": "rule",
+    "CONFIDENCE": 0.83,
+    "RAW_ROW": {
+      "DATE": "2026-01-24T00:00:00",
+      "DESCRIPTION": "Insurance Premium",
+      "DEBIT": 5500.0,
+      "CREDIT": 0.0,
+      "BALANCE": 83041.0
+    }
+  }
+]

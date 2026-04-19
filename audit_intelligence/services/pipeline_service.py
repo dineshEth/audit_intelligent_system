@@ -7,7 +7,7 @@ from ..agents.orchestrator import AuditOrchestrator
 from ..config import get_settings
 from ..db import MongoManager
 from ..ingestion.parsers import parse_document
-from ..llm.local_llm import LocalLLM
+from ..llm.gemini_llm import GeminiLLM
 from ..rag.retrieval import RetrievalEngine
 from ..repositories import AuditRepositories
 from ..schemas import DocumentRecord
@@ -22,7 +22,7 @@ class PipelineService:
         self.mongo = MongoManager(self.settings.mongodb_uri, self.settings.mongodb_db_name)
         self.mongo.ensure_indexes()
         self.repositories = AuditRepositories(self.mongo.db)
-        self.llm = LocalLLM(self.settings.local_llm_path)
+        self.llm = GeminiLLM(api_key=self.settings.gemini_api_key, model_name=self.settings.gemini_model)
         self.retrieval_engine = RetrievalEngine(self.repositories, self.settings)
         self.orchestrator = AuditOrchestrator(self.repositories, self.settings, self.retrieval_engine, self.llm)
 

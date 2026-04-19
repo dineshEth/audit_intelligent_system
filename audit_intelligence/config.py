@@ -29,6 +29,8 @@ class Settings:
     chunk_overlap: int = field(default_factory=lambda: int(os.getenv("CHUNK_OVERLAP", "120")))
     confidence_threshold: float = field(default_factory=lambda: float(os.getenv("CONFIDENCE_THRESHOLD", "0.65")))
     max_retry: int = field(default_factory=lambda: int(os.getenv("MAX_RETRY", "1")))
+    gemini_api_key: str = field(default_factory=lambda: os.getenv("GEMINI_API_KEY", "").strip())
+    gemini_model: str = field(default_factory=lambda: os.getenv("GEMINI_MODEL", "gemini-1.5-flash").strip())
     local_llm_path: str = field(default_factory=lambda: os.getenv("LOCAL_LLM_PATH", "").strip())
     local_embedding_model_path: str = field(default_factory=lambda: os.getenv("LOCAL_EMBEDDING_MODEL_PATH", "").strip())
     base_finetune_model_path: str = field(default_factory=lambda: os.getenv("BASE_FINETUNE_MODEL_PATH", "").strip())

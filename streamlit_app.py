@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 from pathlib import Path
+import sys
 
 import pandas as pd
 import streamlit as st
@@ -19,12 +20,30 @@ def get_service() -> PipelineService:
     return PipelineService(get_settings())
 
 
-service = get_service()
-dashboard_service = DashboardService(service.repositories)
-watcher = DataWatcher(service.repositories, service.settings)
-
 st.title("Audit Intelligence System")
 st.caption("Offline-first audit assistant with LangGraph orchestration, MongoDB persistence, bank statement labeling, and local PEFT fine-tuning.")
+
+if sys.version_info >= (3, 14):
+    st.warning(
+        "Python 3.14 is very new and some data/ML dependencies may behave unexpectedly. "
+        "If you face UI/runtime issues, use Python 3.11 or 3.12 in a clean virtual environment."
+    )
+
+service = None
+dashboard_service = None
+watcher = None
+try:
+    with st.spinner("Initializing backend services..."):
+        service = get_service()
+        dashboard_service = DashboardService(service.repositories)
+        watcher = DataWatcher(service.repositories, service.settings)
+except Exception as exc:
+    st.error(f"Backend initialization failed: {exc}")
+    st.info(
+        "Checklist: ensure MongoDB is running, `.env` has a valid `MONGODB_URI`, "
+        "and dependencies are installed in your active virtual environment."
+    )
+    st.stop()
 
 tab_upload, tab_query, tab_finetune, tab_dashboard = st.tabs(
     ["Upload & Analyze", "Query", "Fine-Tuning", "Dashboard"]

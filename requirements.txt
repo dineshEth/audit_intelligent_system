@@ -1,6 +1,7 @@
 accelerate>=1.0.1
 datasets>=3.0.0
 faiss-cpu>=1.8.0
+google-generativeai>=0.8.5
 langgraph>=0.2.30
 matplotlib>=3.8.0
 mongomock>=4.1.2
