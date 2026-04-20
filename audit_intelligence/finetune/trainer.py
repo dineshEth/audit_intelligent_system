@@ -221,6 +221,7 @@ class LocalFineTuneTrainer:
                 report_to=[],
                 remove_unused_columns=False,
                 fp16=torch.cuda.is_available(),
+                dataloader_pin_memory=False if not torch.cuda.is_available() else True,
             )
 
             trainer = Trainer(
