@@ -216,7 +216,7 @@ class LocalFineTuneTrainer:
                 per_device_eval_batch_size=self.settings.finetune_batch_size,
                 learning_rate=self.settings.finetune_learning_rate,
                 logging_steps=5,
-                evaluation_strategy="epoch",
+                eval_strategy="epoch",
                 save_strategy="epoch",
                 report_to=[],
                 remove_unused_columns=False,
@@ -228,7 +228,6 @@ class LocalFineTuneTrainer:
                 args=training_args,
                 train_dataset=train_ds,
                 eval_dataset=eval_ds,
-                tokenizer=tokenizer,
                 data_collator=default_data_collator,
             )
 
