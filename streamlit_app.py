@@ -56,7 +56,7 @@ with tab_upload:
         "Analysis request",
         value="Analyze this document for audit review, label bank transactions if present, and produce a report.",
     )
-    if st.button("Run analysis", use_container_width=True):
+    if st.button("Run analysis", width="stretch"):
         if uploaded is None:
             st.warning("Please upload a file first.")
         else:
@@ -113,7 +113,7 @@ with tab_query:
     doc_options = {f"{doc.file_name} ({doc.doc_type})": doc.id for doc in docs}
     selected = st.multiselect("Limit search to documents", options=list(doc_options.keys()))
     query = st.text_input("Query", value="What are the key anomalies and totals?")
-    if st.button("Run query", key="run_query", use_container_width=True):
+    if st.button("Run query", key="run_query", width="stretch"):
         try:
             selected_ids = [doc_options[item] for item in selected] if selected else None
             result = service.answer_query(query, selected_ids)
@@ -131,7 +131,7 @@ with tab_finetune:
     st.subheader("Local fine-tuning controls")
     col1, col2 = st.columns(2)
     with col1:
-        if st.button("Scan for new data and fine-tune", use_container_width=True):
+        if st.button("Scan for new data and fine-tune", width="stretch"):
             try:
                 outcome = watcher.scan_and_maybe_finetune()
                 if outcome is None:
@@ -148,7 +148,7 @@ with tab_finetune:
     st.markdown("### Recent model runs")
     model_runs = service.repositories.model_runs.find_many({}, limit=10, sort=("created_at", -1))
     if model_runs:
-        st.dataframe(pd.DataFrame([run.model_dump() for run in model_runs]), use_container_width=True)
+        st.dataframe(pd.DataFrame([run.model_dump() for run in model_runs]), width="stretch")
     else:
         st.info("No model runs logged yet.")
 
@@ -172,6 +172,6 @@ with tab_dashboard:
 
     st.markdown("### Recent logs")
     if snapshot["recent_logs"]:
-        st.dataframe(pd.DataFrame(snapshot["recent_logs"]), use_container_width=True)
+        st.dataframe(pd.DataFrame(snapshot["recent_logs"]), width="stretch")
     else:
         st.info("No logs available yet.")
